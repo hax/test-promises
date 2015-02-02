@@ -5,6 +5,8 @@ Implementation | Result
 -------------- | ------
 Firefox 35.0.1 -- Promise | async then then timeout a1 a2 a3 a4 a5 a6 a7 a8 b1 b2 b3 b4 b5 b6 b7 b8
 Firefox 35.0.1 -- Thenable | async then then timeout a1 a2 a3 a4 a5 a6 a7 a8 b1 b2 b3 b4 b5 b6 b7 b8
+Internet Explorer 11.0.9879.0 -- Promise | async then then then then then then then then then then then then timeout a1 a2 b1 b2 a3 b3 b4 a4 a5 b5 b6 a6 a7 b7 b8 a8
+Internet Explorer 11.0.9879.0 -- Thenable | async then then then then then then then then then then then then timeout a1 a2 b1 b2 a3 b3 b4 a4 a5 b5 b6 a6 then then then then a7 b7 b8 a8
 Chrome 42.0.2292.0 canary -- Promise | async then then then then then then then then then then then then a1 a2 b1 b2 a3 b3 b4 a4 a5 b5 b6 a6 timeout then then then then a7 b7 b8 a8
 Chrome 42.0.2292.0 canary -- Thenable | async then then then then then then then then then then then then a1 a2 b1 b2 a3 b3 b4 a4 a5 b5 b6 a6 timeout then then then then a7 b7 b8 a8
 nodejs v0.11.14 (v8: 3.26.33) -- Promise | async then then then then then then then then then then then then a1 a2 b1 b2 a3 b3 b4 a4 a5 b5 b6 a6 timeout then then then then a7 b7 b8 a8
