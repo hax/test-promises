@@ -1,5 +1,7 @@
- 0. [Promise test](https://github.com/hax/test-promises/blob/master/promises-spec-Promise.js)
- 0. [Thenable test](https://github.com/hax/test-promises/blob/master/promises-spec-Thenable.js)
+ 0. [Promise test](https://github.com/hax/test-promises/blob/master/promises-spec-Promise.js) [jsbin](http://jsbin.com/raxeve/1/edit?js,output)
+ 0. [Thenable test](https://github.com/hax/test-promises/blob/master/promises-spec-Thenable.js) [jsbin](http://jsbin.com/safoxe/edit?js,console)
+
+[All promise implementations](https://github.com/hax/all-promises) (except browsers) are tested on Node.js v0.11.14
 
 Implementation | Result
 -------------- | ------
@@ -9,8 +11,8 @@ Internet Explorer 11.0.9879.0 -- Promise | async then then then then then then t
 Internet Explorer 11.0.9879.0 -- Thenable | async then then then then then then then then then then then then timeout a1 a2 b1 b2 a3 b3 b4 a4 a5 b5 b6 a6 then then then then a7 b7 b8 a8
 Chrome 42.0.2292.0 canary -- Promise | async then then then then then then then then then then then then a1 a2 b1 b2 a3 b3 b4 a4 a5 b5 b6 a6 timeout then then then then a7 b7 b8 a8
 Chrome 42.0.2292.0 canary -- Thenable | async then then then then then then then then then then then then a1 a2 b1 b2 a3 b3 b4 a4 a5 b5 b6 a6 timeout then then then then a7 b7 b8 a8
-nodejs v0.11.14 (v8: 3.26.33) -- Promise | async then then then then then then then then then then then then a1 a2 b1 b2 a3 b3 b4 a4 a5 b5 b6 a6 timeout then then then then a7 b7 b8 a8
-nodejs v0.11.14 (v8: 3.26.33) -- Thenable | async then a1 a2 b1 b2 a3 b3 b4 a4 a5 b5 b6 a6 timeout a7 b7 b8 a8
+nodejs v0.11.14 (v8: 3.26.33) native -- Promise | async then then then then then then then then then then then then a1 a2 b1 b2 a3 b3 b4 a4 a5 b5 b6 a6 timeout then then then then a7 b7 b8 a8
+nodejs v0.11.14 (v8: 3.26.33) native -- Thenable | async then a1 a2 b1 b2 a3 b3 b4 a4 a5 b5 b6 a6 timeout a7 b7 b8 a8
 bluebird 2.9.5 -- Promise | async a1 a2 b1 b2 a3 b3 b4 a4 a5 b5 b6 a6 timeout a7 b7 b8 a8
 bluebird 2.9.5 -- Thenable | then then async a1 a2 a3 a4 a5 a6 b1 b2 b3 b4 b5 b6 timeout a7 b7 b8 a8
 es6-promise 2.0.1 -- Promise | async a1 a2 a3 a4 a5 a6 b1 b2 b3 b4 b5 b6 timeout a7 b7 b8 a8
