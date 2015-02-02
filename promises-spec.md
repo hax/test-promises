@@ -1,5 +1,5 @@
- 0. [Promise test](https://github.com/hax/test-promises/blob/master/promises-spec-Promise.js) [jsbin](http://jsbin.com/raxeve/1/edit?js,output)
- 0. [Thenable test](https://github.com/hax/test-promises/blob/master/promises-spec-Thenable.js) [jsbin](http://jsbin.com/safoxe/edit?js,console)
+ 0. [Promise test](https://github.com/hax/test-promises/blob/master/promises-spec-Promise.js)  / [jsbin](http://jsbin.com/raxeve/1/edit?js,output)
+ 0. [Thenable test](https://github.com/hax/test-promises/blob/master/promises-spec-Thenable.js)  / [jsbin](http://jsbin.com/safoxe/edit?js,console)
 
 [All promise implementations](https://github.com/hax/all-promises) (except browsers) are tested on Node.js v0.11.14
 
