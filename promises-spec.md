@@ -1,6 +1,8 @@
+ 0. [Promise test](https://github.com/hax/test-promises/blob/master/promises-spec-Promise.js)
+ 0. [Thenable test](https://github.com/hax/test-promises/blob/master/promises-spec-Thenable.js)
 
-Implementation | Promise/Thenable
--------------- | ----------------
+Implementation | Result
+-------------- | ------
 Firefox 35.0.1 -- Promise | async then then timeout a1 a2 a3 a4 a5 a6 a7 a8 b1 b2 b3 b4 b5 b6 b7 b8
 Firefox 35.0.1 -- Thenable | async then then timeout a1 a2 a3 a4 a5 a6 a7 a8 b1 b2 b3 b4 b5 b6 b7 b8
 Chrome 42.0.2292.0 canary -- Promise | async then then then then then then then then then then then then a1 a2 b1 b2 a3 b3 b4 a4 a5 b5 b6 a6 timeout then then then then a7 b7 b8 a8
